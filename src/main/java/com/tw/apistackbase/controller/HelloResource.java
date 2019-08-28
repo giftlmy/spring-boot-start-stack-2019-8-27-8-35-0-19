@@ -18,5 +18,5 @@ public class HelloResource {
 
         return ResponseEntity.ok("Hello:" + userName);
     }
-
 }
+
