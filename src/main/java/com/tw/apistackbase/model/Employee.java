@@ -37,4 +37,14 @@ public class Employee {
     public void setSex(String sex) {
         this.sex = sex;
     }
+
+    public Employee(int id, String name, int age, String sex) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
+    public Employee() {
+    }
 }
