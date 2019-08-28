@@ -50,4 +50,9 @@ public class EmployessController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
 
     }
+    @DeleteMapping(path = "/{id}")
+    public ResponseEntity<Employee> deleteEmployeeByid(@PathVariable int id){
+        employees.remove(id);
+        return ResponseEntity.status(HttpStatus.OK).build();
+    }
 }
